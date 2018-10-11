@@ -52,8 +52,8 @@ module VagrantPlugins
                 end
                 b3.use ConnectAWS
                 b3.use ElbDeregisterInstance
-                b3.use TerminateInstance
                 b3.use ProvisionerCleanup if defined?(ProvisionerCleanup)
+                b3.use TerminateInstance
               end
             else
               b2.use MessageWillNotDestroy
